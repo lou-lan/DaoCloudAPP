@@ -1,4 +1,4 @@
-FROM FROM daocloud.io/node
+FROM FROM daocloud.io/node:0.12.0-wheezy
 MAINTAINER Zhai Huailou <loualn@loulan.me>
 
 #在容器中创建一个目录
