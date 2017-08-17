@@ -7,7 +7,7 @@ RUN mkdir -p /home/Service
 #将容器的工作目录定位到 /home/Service中
 WORKDIR /home/Service
 
-COPY ./NodeJS /home/Service  
+COPY /NodeJS/ /home/Service  
 RUN npm install
 
 EXPOSE 8888
