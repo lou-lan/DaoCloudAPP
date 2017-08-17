@@ -1,0 +1,14 @@
+{
+      "name": "DaoCloudBlogAPI",
+      "version": "1.0.0",
+      "description": "DaoCloud Blog API on Docker",
+      "author": "Zhai Huailou",
+      "main": "index.js",
+      "scripts": {
+            "start": "node index.js"
+      },
+      "dependencies": {
+            "cheerio": "latest",
+            "cheerio": "sqlite3"
+      }
+}
