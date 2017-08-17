@@ -5,7 +5,7 @@ MAINTAINER Zhai Huailou <loualn@loulan.me>
 RUN mkdir -p /var/Service
 
 #将容器的工作目录定位到 /var/Service中
-WORKDIR /vae/Service
+WORKDIR /var/Service
 
 COPY NodeJS/ /var/Service  
 RUN npm install
