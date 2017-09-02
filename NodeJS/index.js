@@ -109,7 +109,7 @@ http.createServer(function(request, response) {
     response.writeHead(200, {'Content-Type': 'text/plain'});
     db.serialize(function() {
         // 发送响应数据
-        db.all("select * from BlogList", function(err, rows) {
+        db.all("select * from BlogList ORDER BY time DESC", function(err, rows) {
             // console.log(rows);
             response.end(JSON.stringify(rows));
         });
