@@ -92,8 +92,8 @@ function saveBlogListDate(blogListData) {
         blogListData.forEach(function(item) {
             
             // 判断数据库中是否有数据
-            db.get("select COUNT(title) as countTitle from BlogList where title = ?", item.title, function(err, row) {
-                if (row.countTitle == 0) {
+            db.get("select COUNT(postURL) as countURL from BlogList where title = ?", item.postURL, function(err, row) {
+                if (row.countURL == 0) {
                     var test = db.prepare("INSERT INTO BlogList(title, imgURL, time, postURL) VALUES(?, ?, ?, ?)");
                     test.run(item.title, item.imgURL, item.postedTime, item.postURL);
                     test.finalize();
